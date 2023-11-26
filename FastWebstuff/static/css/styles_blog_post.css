@@ -1,0 +1,139 @@
+/* styles_blog_post.css */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #f8f8f8; /* Light gray background */
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0.1); /* Transparent background with a hint of white */
+    padding: 10px 20px;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.navbar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    z-index: -1;
+    backdrop-filter: blur(10px);
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar nav a:hover {
+    color: #ecf0f1;
+}
+
+/* Content specific to Single Blog Post Page */
+.blog-post {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.post-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.post-header h1 {
+    font-size: 36px;
+}
+
+.author {
+    font-style: italic;
+    color: #555;
+}
+
+.post-summary {
+    margin-bottom: 20px;
+}
+
+.post-content {
+    /* Add styles for the full content of the blog post */
+}
+
+/* Comments Section */
+.comments-section {
+    margin-top: 30px;
+}
+
+.comments-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.comments-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.comments-section li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+/* Interaction Buttons */
+.interaction-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.interaction-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.interaction-buttons button:hover {
+    background-color: #3498db; /* Button color on hover */
+}
+
+/* Footer (similar to other pages) */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: rgba(236, 240, 241, 0.8);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 20px;
+}

@@ -1,0 +1,151 @@
+/* styles_home.css */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #f8f8f8; /* Light gray background */
+}
+
+.navbar {
+    background: #2980b9; /* Palestinian flag blue */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold; /* Added to make the text more visible */
+    transition: color 0.3s ease;
+}
+
+.navbar nav a:hover {
+    color: #ecf0f1;
+}
+
+/* Search bar styles */
+.search-bar {
+    display: flex;
+    justify-content: flex-end; /* Align items to the end (far right) */
+}
+
+.search-bar input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 8px 15px;
+    background-color: #2980b9; /* Palestinian flag blue */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+
+/* Home Page Content */
+.home-page {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Added a subtle scale effect on hover */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.card h2 {
+    color: #333;
+}
+
+.card h5 {
+    color: #555;
+}
+
+.card p {
+    color: #777;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333; /* Background color for the footer */
+    color: #fff; /* Text color */
+    padding: 20px; /* Padding around the content in the footer */
+    text-align: center; /* Center-align the content */
+    display: flex; /* Use flexbox to arrange items horizontally */
+    justify-content: space-around; /* Distribute items evenly along the main axis */
+    flex-wrap: wrap; /* Allow items to wrap onto the next line if the screen is narrow */
+}
+
+/* Each section in the footer */
+.footer section {
+    margin-bottom: 20px; /* Add some space between different sections in the footer */
+}
+
+/* Links in the quick links section */
+.quick-links a {
+    color: #fff; /* Text color for links */
+    text-decoration: none; /* Remove underlines from links */
+    margin: 0 10px; /* Add spacing between links */
+}
+
+.quick-links a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+/* Social media icons */
+.social-media img {
+    width: 30px; /* Adjust the width of social media icons */
+    margin: 0 10px; /* Add spacing between icons */
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 600px) {
+    .quick-links a,
+    .social-media img {
+        margin: 10px 0; /* Adjust spacing for smaller screens */
+    }
+}
+
+/* Navbar right alignment */
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+/* Style for signup and login links */
+.auth-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.auth-links a:hover {
+    text-decoration: underline;
+}
